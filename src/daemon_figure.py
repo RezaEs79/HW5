@@ -5,7 +5,8 @@ import os
 
 dpi=72
 fig=plt.figure(1,figsize=(1500/dpi,800/dpi),dpi=dpi,frameon=False)
-ax1=fig.add_axes([0,0,1,1])
+ax1=fig.add_axes([0,0,1,
+1])
 fig.set_facecolor('xkcd:salmon')
 fig.set_facecolor((1.0, 0.47, 0.42))
 img = mpimg.imread(f"{os.path.realpath(os.path.join(os.path.dirname(__file__), '..', 'resources', ))}/image.jpeg")
