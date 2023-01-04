@@ -24,7 +24,7 @@ imgplot = ax1.imshow(img, aspect=.5)
 # Convert Image to gray and Show it in Third Layer
 img2 = img.copy()
 img2[:, :, 0] = img2[:, :, 1] = img2[:, :, 2] = np.dot(img2, [.8, .4, 0.3])
-ax2 = fig.add_axes([0.6, 0.6, 0.3, 0.3])
+ax2 = fig.add_axes([0.6, 0.6, 0.42, 0.4])
 ax2.tick_params(axis='both', bottom=False, left=False,
                 labelleft=False, labelbottom=False)
 ax2.imshow(img2, cmap='gray', aspect=.5)
